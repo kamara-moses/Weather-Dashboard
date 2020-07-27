@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.header {
+    height: 80px;
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    background-color: whitesmoke;
+    margin-left: 20px;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.column {
+    float: left;
+    width: 40%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .display-info {
+      width: 100%;
+      text-align: center;
+  }
+
+.search {
+    padding: 20px;
+}
+
+.search input {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+  
+  /* Style the submit button */
+.search button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: rgb(173, 216, 230);
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+  
+.search button:hover {
+    background: #0b7dda;
+}
+  
+  /* Clear floats */
+.search::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.clear-search {
+    background-color: lightblue;
+    font-family: serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    width: 30%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.clear button:hover {
+    color: white;
+}

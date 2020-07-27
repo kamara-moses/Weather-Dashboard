@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+    <link rel='stylesheet' href='main.css'>
+    <title>Weather App</title>
+</head>
+
+<body>
+    <header>
+        <div class='header'>
+            <h1>Weather Dashboard</h1>
+        </div>
+    </header>
+    <div class='row'>
+        <div class='column'>
+            <div class='container'>
+                <div class='title'>
+                    <h2>Search</h2>
+                </div>
+                <div class='search'>
+                    <input class='search-field' type='text' placeholder='Enter City Name' name='search'>
+                    <button class='searchBtn' type='submit'><i class="fas fa-search"></i></button>
+                </div>
+                <div class='clear'>
+                    <button class='clear-search'>Clear</button>
+                </div>
+            </div>
+        </div>
+        <div class='column'>
+            <div class='display-info'>
+                <span id='city-name' class='city-name'></span>
+            </div>
+            <div class='temperature'>
+                <p id='temp'></p>
+            </div>
+            <div>
+                <p id='humidity'></p>
+            </div>
+            <div>
+                <p id='wind'></p>
+            </div>
+            <div>
+                <p id=uv-index></p>
+            </div>
+            <div class='five-forecast'>
+                <div class='forecast'></div>
+                <div class='forecast'></div>
+                <div class='forecast'></div>
+                <div class='forecast'></div>
+                <div class='forecast'></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src='script.js'></script>
+</body>
+
+</html>
