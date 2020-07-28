@@ -22,6 +22,7 @@ h1 {
 
 .container {
     width: 100%;
+    height: 796px;
     background-color: whitesmoke;
     margin-left: 20px;
     padding: 20px;
@@ -31,20 +32,16 @@ h1 {
 
 .column {
     float: left;
-    width: 40%;
-  }
+    width: 30%;
+    height: 796px;
+}
   
   /* Clear floats after the columns */
-  .row:after {
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
-
-  .display-info {
-      width: 100%;
-      text-align: center;
-  }
+}
 
 .search {
     padding: 20px;
@@ -96,4 +93,30 @@ h1 {
 
 .clear button:hover {
     color: white;
+}
+
+.display-info{
+    width: 217%;
+    margin: 20px 0px 40px 40px;
+    border: 1px solid lightblue;
+}
+
+
+p {
+    margin: 20px;
+    font-size: 16px;
+    font-family: fantasy;
+}
+
+.footer {
+    background-color: lightblue;
+    text-align: center;
+    font-family: fantasy;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    position: sticky;
+}
+.five-forecast, .Day-1 {
+    margin: 0 0 0 20px;
 }

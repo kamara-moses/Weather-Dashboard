@@ -33,30 +33,38 @@
         <div class='column'>
             <div class='display-info'>
                 <span id='city-name' class='city-name'></span>
+                <p class='currentDate'></p>
+                <div class='temperature'>
+                    <p id='temp'></p>
+                    <p id='humidity'></p>
+                    <p id='wind'></p>
+                    <p id=uv-index></p>
+                </div>
             </div>
-            <div class='temperature'>
-                <p id='temp'></p>
-            </div>
-            <div>
-                <p id='humidity'></p>
-            </div>
-            <div>
-                <p id='wind'></p>
-            </div>
-            <div>
-                <p id=uv-index></p>
-            </div>
-            <div class='five-forecast'>
-                <div class='forecast'></div>
-                <div class='forecast'></div>
-                <div class='forecast'></div>
-                <div class='forecast'></div>
-                <div class='forecast'></div>
+            <div class='row-forecast'>
+                <div class='five-forecast'>
+                    <span id='5Day-Forecast' class='5Day-Forecast'></span>
+                    <div class='Day-1'>
+                        <p id='icon'></p>
+                        <p id='temp1'></p>
+                        <p id='humidity1'></p>
+                    </div>
+                    <div class='Day-2'></div>
+                    <div class='Day-3'></div>
+                    <div class='Day-4'></div>
+                    <div class='Day-5'></div>
+                </div>
             </div>
         </div>
     </div>
+    <footer class='footer'>
+        <span>Made by Moses Kamara</span>
+        <p>
+            &copy; 2020 Kamara, Inc.
+        </p>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src='script.js'></script>
 </body>
 
