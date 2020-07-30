@@ -15,22 +15,23 @@
             <h1>Weather Dashboard</h1>
         </div>
     </header>
-    <div class='row'>
-        <div class='column'>
-            <div class='container'>
+    <div class='container'>
+        <div class='row'>
+            <div class='column-1'>
                 <div class='title'>
                     <h2>Search</h2>
                 </div>
                 <div class='search'>
-                    <input class='search-field' type='text' placeholder='Enter City Name' name='search'>
+                    <input class='search-field' type='text' onfocus="this.value=''" placeholder='Enter City or State'
+                        name='search'>
                     <button class='searchBtn' type='submit'><i class="fas fa-search"></i></button>
                 </div>
-                <div class='clear'>
-                    <button class='clear-search'>Clear</button>
+                <div class='city-buttons'>
+                    <ul></ul>
                 </div>
             </div>
         </div>
-        <div class='column'>
+        <div class='column-2'>
             <div class='display-info'>
                 <span id='city-name' class='city-name'></span>
                 <p class='currentDate'></p>
@@ -39,39 +40,46 @@
                     <p id='humidity'></p>
                     <p id='wind'></p>
                     <p id='uv-index'></p>
-
                 </div>
             </div>
             <div class='row'>
+                <span id='5Day-Forecast' class='5Day-Forecast'></span>
                 <div class='five-forecast'>
-                    <span id='5Day-Forecast' class='5Day-Forecast'></span>
-                    <div class='Days'>
+                    <div class='Day'>
                         <div id='first'>
                             <p id='date1'></p>
                             <p id='icon1'></p>
                             <p id='temp1'></p>
                             <p id='humidity1'></p>
                         </div>
+                    </div>
+                    <div class='Day'>
                         <div id='second'>
-                            <p class='day2'></p>
+                            <p id='date2'></p>
                             <p id='icon2'></p>
                             <p id='temp2'></p>
                             <p id='humidity2'></p>
                         </div>
+                    </div>
+                    <div class='Day'>
                         <div id='third'>
-                            <p class='day3'></p>
+                            <p id='date3'></p>
                             <p id='icon3'></p>
                             <p id='temp3'></p>
                             <p id='humidity3'></p>
                         </div>
+                    </div>
+                    <div class='Day'>
                         <div id='fourth'>
-                            <p class='day4'></p>
+                            <p id='date4'></p>
                             <p id='icon4'></p>
                             <p id='temp4'></p>
                             <p id='humidity4'></p>
                         </div>
+                    </div>
+                    <div class='Day'>
                         <div id='fifth'>
-                            <p id='day5'></p>
+                            <p id='date5'></p>
                             <p id='icon5'></p>
                             <p id='temp5'></p>
                             <p id='humidity5'></p>
@@ -81,6 +89,10 @@
             </div>
         </div>
     </div>
+
+
+
+        
     <footer class='footer'>
         <span>Made by Moses Kamara</span>
         <p>

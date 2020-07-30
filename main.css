@@ -5,8 +5,7 @@
 }
 
 body {
-    font-size: 16px;
-    line-height: 1;
+    margin: 0;
 }
 
 .header {
@@ -22,26 +21,30 @@ h1 {
 
 .container {
     width: 100%;
-    height: 796px;
-    background-color: whitesmoke;
-    margin-left: 20px;
-    padding: 20px;
-    text-align: center;
-    
-}
-
-.column {
-    float: left;
-    width: 30%;
-    height: 796px;
-}
-  
-  /* Clear floats after the columns */
-.row:after {
-    content: "";
+    padding: 0;
     display: table;
     clear: both;
 }
+
+.column-1 {
+    float: left;
+    width: 30%;
+    background-color: whitesmoke;
+    padding: 20px;
+    margin-left: 20px;
+    height: 680px;
+}
+
+.column-2 {
+    float: left;
+    width: 65%;
+    margin-top: 10px;
+    margin-left: 10px;
+   /* border: 1px solid lightblue;*/
+   text-align: center;
+}
+  
+ 
 
 .search {
     padding: 20px;
@@ -95,13 +98,6 @@ h1 {
     color: white;
 }
 
-.display-info{
-    width: 217%;
-    margin: 20px 0px 40px 40px;
-    border: 1px solid lightblue;
-}
-
-
 p {
     margin: 20px;
     font-size: 16px;
@@ -117,19 +113,31 @@ p {
     padding: 10px;
     position: sticky;
 }
-.five-forecast, .Day-1 {
-    margin: 0 0 0 20px;
-}
 
 #uv-index {
     width: 14%;
     padding: 10px;
+    margin-left: 43%;
 }
 
-.Days {
-    background-color:lightblue;
+h2 {
+    margin-left: 40px;
+}
+
+.five-forecast {
     text-align: center;
-    color: white;
+    color: rgb(106, 160, 182);
     font-size: 16px;
     margin: 20px;
+    width: 80%;
+    float: left;
+    margin-left: 130px;
+}
+
+.Day {
+    float: left;;
+    border: 1px solid white;
+}
+#date1, #date2, #date3, #date4, #date5 {
+    background-color: white;
 }
