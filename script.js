@@ -10,7 +10,7 @@ $('.searchBtn').on('click', function () {
 
 
     var queryUrl = 'https://api.openweathermap.org/data/2.5/weather?q='
-        + city + '&units=imperial' + '&appid=7439220f89767ecc92468da6aaab2380';
+        + city + '&units=imperial' + '&appid=' + APIKey;
 
 
     $.ajax({
@@ -26,7 +26,7 @@ $('.searchBtn').on('click', function () {
             $('#humidity').text('Humidity: ' + response.main.humidity + '%');
             $('#wind').text('Wind Speed: ' + response.wind.speed + 'MPH');
 
-            var uvUrl = 'https://api.openweathermap.org/data/2.5/uvi?appid=7e4c7478cc7ee1e11440bf55a8358ec3&lat=' + response.coord.lat + '&lon=' + response.coord.lat;
+            var uvUrl = 'https://api.openweathermap.org/data/2.5/uvi?appid=' + APIKey + '&lat=' + response.coord.lat + '&lon=' + response.coord.lat;
             $.ajax({
                 url: uvUrl,
                 method: 'GET'
@@ -55,7 +55,7 @@ $('.searchBtn').on('click', function () {
             localStorage.setItem('cities', newCities);
         })
 
-    var queryUrl = 'https://api.openweathermap.org/data/2.5/forecast?q=' + city + '&appid=7439220f89767ecc92468da6aaab2380';
+    var queryUrl = 'https://api.openweathermap.org/data/2.5/forecast?q=' + city + '&appid=' + APIKey;
 
     $('.5Day-Forecast').html('<h2>5-Day Forecast:</h2>');
 
