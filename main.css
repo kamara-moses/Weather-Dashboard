@@ -10,8 +10,8 @@ body {
 
 .header {
     height: 80px;
-    background-color: lightblue;
-    color: white;
+    background-image: url('images/weather-icons.jpg');
+    color: lightblue;
     text-align: center;
 }
 
@@ -32,7 +32,7 @@ h1 {
     background-color: whitesmoke;
     padding: 20px;
     margin-left: 20px;
-    height: 680px;
+    height: 690px;
 }
 
 .column-2 {
@@ -40,14 +40,16 @@ h1 {
     width: 65%;
     margin-top: 10px;
     margin-left: 10px;
-   /* border: 1px solid lightblue;*/
    text-align: center;
 }
-  
- 
+
+#city-name {
+    color: lightblue;
+}
 
 .search {
     padding: 20px;
+    
 }
 
 .search input {
@@ -83,19 +85,18 @@ h1 {
     display: table;
 }
 
-.clear-search {
-    background-color: lightblue;
-    font-family: serif;
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-    width: 30%;
-    height: 40px;
-    border-radius: 10px;
-}
-
 .clear button:hover {
     color: white;
+}
+
+.clearBtn {
+    font-family: fantasy;
+    font-size: 16px;
+    border-radius: 10px;
+    color: white;
+    background-color: lightblue;
+    padding: 10px;
+    margin: 20px;
 }
 
 p {
@@ -122,11 +123,11 @@ p {
 
 h2 {
     margin-left: 40px;
+    color: lightblue;
 }
 
 .five-forecast {
     text-align: center;
-    color: rgb(106, 160, 182);
     font-size: 16px;
     margin: 20px;
     width: 80%;
@@ -136,8 +137,17 @@ h2 {
 
 .Day {
     float: left;;
-    border: 1px solid white;
 }
-#date1, #date2, #date3, #date4, #date5 {
+
+.searchedCities{
+    width:100%;
+    list-style: none;
+    display:block;
+    font-size: 20px;
     background-color: white;
+    color: lightblue;
+}
+
+.list-group-item {
+    border: 1px solid grey;
 }
