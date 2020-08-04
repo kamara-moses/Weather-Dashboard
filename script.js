@@ -19,7 +19,11 @@ $('.searchBtn').on('click', function (event) {
     }
     localStorage.setItem('savedCities', JSON.stringify(newCities));
 
-    rendersavedCities();
+    showWeather(city);
+    rendersavedCities(newCities);
+    //showCity();
+})
+function showWeather(city) {
     var queryUrl = 'https://api.openweathermap.org/data/2.5/weather?q='
         + city + '&units=imperial' + '&appid=' + APIKey;
 
@@ -108,7 +112,9 @@ $('.searchBtn').on('click', function (event) {
             $('#fifth #humidity5').text('Humidity: ' + response.list[33].main.humidity);
 
         })
-    function rendersavedCities() {
+}
+    
+    function rendersavedCities(newCities) {
         $('.searchedCities').empty();
         while (newCities.length > 5) {
             newCities.splice(-1, 1)
@@ -121,14 +127,19 @@ $('.searchBtn').on('click', function (event) {
             console.log(newCities[i])
         }
     }
-    $('.searchedCities').on('click', 'list-group-item', function(event) {
-        event.preventDefault();
-        city = savedCities;
-    });
+   //function showCity() {
+        $('.searchedCities').on('click', '.list-group-item', function (event) {
+            event.preventDefault();
+            city = ($(this).text());
+            showWeather(city);
+            console.log(city);
+        });
+    //}
+
     $('.clearBtn').on('click', function () {
         $('.searchedCities').remove();
         localStorage.clear();
     })
-})
+
 
 
