@@ -30,7 +30,7 @@ Include a 5-Day Forecast below the current weather conditions:
     -jQuery
     -Moment.js
 
-<h2>Difficulties</h2>
+<h2>Challenges, Opportunities for Improvement</h2>
 In the beiginning of the build, had an issue with the API calls. I kept getting 404 and 401 errors in relations to my calls. After working on figuring out the reason for the error codes, I was able to fix my code and correct the API calls. I wanted to make sure that I was getting the right information from my call and utilized the data that was presented to me by the API. I utilized the five day forecast that updates every 3 hours from the OpenWeather API. That presented a unique challenge and really required me spending some time trying to go through the array and access what I wanted.
 
 This application is open for contributions and updates to all those who have ideas to improve or contribute.
