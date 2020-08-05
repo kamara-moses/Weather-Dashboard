@@ -32,7 +32,7 @@ h1 {
     background-color: whitesmoke;
     padding: 20px;
     margin-left: 20px;
-    height: 690px;
+    height: 815px;
 }
 
 .column-2 {
@@ -40,7 +40,7 @@ h1 {
     width: 65%;
     margin-top: 10px;
     margin-left: 10px;
-   text-align: center;
+    text-align: center;
 }
 
 #city-name {
@@ -111,7 +111,7 @@ p {
     font-family: fantasy;
     color: white;
     font-size: 16px;
-    padding: 10px;
+    padding: 20px;
     position: sticky;
 }
 
@@ -128,11 +128,10 @@ h2 {
 
 .five-forecast {
     text-align: center;
-    font-size: 16px;
     margin: 20px;
-    width: 80%;
+    width: 100%;
     float: left;
-    margin-left: 130px;
+    margin-left: 21%;
 }
 
 .Day {

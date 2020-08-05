@@ -5,7 +5,6 @@ var APIKey = '7439220f89767ecc92468da6aaab2380'
 $('.searchBtn').on('click', function (event) {
     var currentDate = moment().format('M/DD/YYYY');
     city = $('.search-field').val();
-    //newCities.unShift(city);
 
     var newCities = JSON.parse(localStorage.getItem('savedCities'));
     if (newCities != null) {
@@ -21,7 +20,6 @@ $('.searchBtn').on('click', function (event) {
 
     showWeather(city);
     rendersavedCities(newCities);
-    //showCity();
 })
 function showWeather(city) {
     var queryUrl = 'https://api.openweathermap.org/data/2.5/weather?q='
@@ -127,14 +125,12 @@ function showWeather(city) {
             console.log(newCities[i])
         }
     }
-   //function showCity() {
         $('.searchedCities').on('click', '.list-group-item', function (event) {
             event.preventDefault();
             city = ($(this).text());
             showWeather(city);
             console.log(city);
         });
-    //}
 
     $('.clearBtn').on('click', function () {
         $('.searchedCities').remove();
