@@ -32,7 +32,7 @@ h1 {
     background-color: whitesmoke;
     padding: 20px;
     margin-left: 20px;
-    height: 920px;
+    height: 815px;
 }
 
 .column-2 {
@@ -111,7 +111,7 @@ p {
     font-family: fantasy;
     color: white;
     font-size: 16px;
-    padding: 20px;
+    padding: 35px;
     position: sticky;
 }
 
