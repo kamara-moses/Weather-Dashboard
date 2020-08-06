@@ -111,31 +111,31 @@ function showWeather(city) {
 
         })
 }
-    
-    function rendersavedCities(newCities) {
-        $('.searchedCities').empty();
-        while (newCities.length > 5) {
-            newCities.splice(-1, 1)
-        }
-        for (var i = 0; i < newCities.length; i++) {
-            listItem = $('<li>');
-            listItem.attr('class', 'list-group-item')
-            listItem.text(newCities[i])
-            $('.searchedCities').append(listItem)
-            console.log(newCities[i])
-        }
-    }
-        $('.searchedCities').on('click', '.list-group-item', function (event) {
-            event.preventDefault();
-            city = ($(this).text());
-            showWeather(city);
-            console.log(city);
-        });
 
-    $('.clearBtn').on('click', function () {
-        $('.searchedCities').remove();
-        localStorage.clear();
-    })
+function rendersavedCities(newCities) {
+    $('.searchedCities').empty();
+    while (newCities.length > 5) {
+        newCities.splice(-1, 1)
+    }
+    for (var i = 0; i < newCities.length; i++) {
+        listItem = $('<li>');
+        listItem.attr('class', 'list-group-item')
+        listItem.text(newCities[i])
+        $('.searchedCities').append(listItem)
+        console.log(newCities[i])
+    }
+}
+$('.searchedCities').on('click', '.list-group-item', function (event) {
+    event.preventDefault();
+    city = ($(this).text());
+    showWeather(city);
+    console.log(city);
+});
+
+$('.clearBtn').on('click', function () {
+    $('.searchedCities').remove();
+    localStorage.clear();
+})
 
 
 
