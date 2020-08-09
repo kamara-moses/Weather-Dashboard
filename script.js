@@ -2,7 +2,8 @@ var city = $('.search-field').val().trim();
 
 var APIKey = '7439220f89767ecc92468da6aaab2380'
 
-$('.searchBtn').on('click', function (event) {
+
+$('.searchBtn').on('click', (event) => {
     var currentDate = moment().format('M/DD/YYYY');
     city = $('.search-field').val();
 
@@ -21,7 +22,8 @@ $('.searchBtn').on('click', function (event) {
     showWeather(city);
     rendersavedCities(newCities);
 })
-function showWeather(city) {
+
+showWeather = (city) => {
     var queryUrl = 'https://api.openweathermap.org/data/2.5/weather?q='
         + city + '&units=imperial' + '&appid=' + APIKey;
 
@@ -112,7 +114,7 @@ function showWeather(city) {
         })
 }
 
-function rendersavedCities(newCities) {
+rendersavedCities = (newCities) => {
     $('.searchedCities').empty();
     while (newCities.length > 5) {
         newCities.splice(-1, 1)
@@ -136,6 +138,10 @@ $('.clearBtn').on('click', function () {
     $('.searchedCities').remove();
     localStorage.clear();
 })
+
+
+
+
 
 
 
