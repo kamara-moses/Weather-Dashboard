@@ -3,6 +3,7 @@ Weather App
 
 <h2>Summary</h2>
 This is a weather dashboard application that provides the user with weather comnditions of their city of choice. The application also present the user futurw five day weather conditons for that city. The application utilizes AJAX to hook into OpenWeather API to retrieve data in JSON format. Using dynamic HTML, CSS and Javascript powered by jQuery, the app is able to show the user the current weather conditions:
+
     - City
     - Date
     - Icon image (visual representation of weather conditions)
@@ -12,6 +13,7 @@ This is a weather dashboard application that provides the user with weather comn
     - UV index 
 
 Include a 5-Day Forecast below the current weather conditions:
+
     - Date
     - Icon image (visual representation of weather conditions)
     - Temperature
@@ -22,6 +24,7 @@ Include a 5-Day Forecast below the current weather conditions:
 ![Weather-Dashboard Demo](images/weather-dashboard.gif)
 
 <h2>Techonologies Used</h2>
+
     -CSS
     -Git
     -GitHub
